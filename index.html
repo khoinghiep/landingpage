@@ -1,0 +1,1421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
+    <link rel="stylesheet" href="https://unpkg.com/reset-css/reset.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+
+
+    <link rel="stylesheet" href="    https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <style>
+        main {
+            max-width: 100%;
+            box-sizing: content-box;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #SECTION1 {
+            position: relative;
+            height: 518px;
+            background-color: rgb(87, 124, 106);
+        }
+
+        #SECTION1 .section-bg {
+            background-size: 100% 100%;
+            background-attachment: scroll;
+            background-origin: content-box;
+            background-image: url("https://w.ladicdn.com/5986678501ffb574811a90d3/img-20200212014428.svg");
+            background-position: center top;
+            background-repeat: repeat;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+        }
+
+        #SECTION1 .section-content {
+            position: relative;
+            top: 10px;
+            left: 0px;
+            /* max-height: 100%; */
+        }
+
+        #SECTION2 {
+            position: relative;
+            height: 420px;
+
+        }
+
+        #SECTION2 .section-bg {
+            background-color: rgb(87, 124, 106);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+        }
+
+
+        .section2-left #video-intro {
+            width: 560px;
+            height: 320px;
+        }
+
+        .section2-right {
+            padding-left: 50px;
+        }
+
+        #SECTION2 h1 {
+            color: rgb(193, 205, 117);
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 1.6;
+        }
+
+        #SECTION2 h2 {
+            color: rgb(247, 247, 247);
+            font-size: 24px;
+            font-weight: bold;
+            line-height: 1.6;
+        }
+
+        #SECTION2 p {
+            color: rgba(247, 247, 247, 0.7);
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        #SECTION3 {
+            height: 226px;
+            background-color: rgba(87, 124, 106, 0.15);
+            ;
+            background: url('./media/images/bg-2.svg') bottom;
+        }
+
+        #SECTION3 .text-number {
+            font-family: "Open Sans", sans-serif;
+            color: #717070;
+            font-size: 80px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 1;
+        }
+
+        #SECTION4 {
+            /* height: 226px; */
+            padding-bottom: 40px;
+        }
+
+        #SECTION4 .method-farming {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-gap: 0px;
+            max-width: 1170px;
+            margin: 0px auto;
+
+        }
+
+        #SECTION4 .method-farming .item-method-farming {
+            padding: 0px 40px;
+        }
+
+        #SECTION4 .card {
+            width: 365px;
+            border: none;
+        }
+
+        #SECTION4 .card .card-body {
+            padding: 0px;
+        }
+
+        #SECTION4 .card-img-top {
+            width: 430px;
+            height: 265px;
+        }
+
+        #SECTION4 .card-title {
+            font-family: "Open Sans", sans-serif;
+            color: rgb(87, 124, 105);
+            font-size: 18px;
+            font-weight: bold;
+            text-align: left;
+            line-height: 2.6;
+        }
+
+
+        #SECTION4 .card-text {
+            font-family: "Open Sans", sans-serif;
+            color: rgb(66, 66, 66);
+            font-size: 14px;
+            text-align: left;
+            line-height: 1.8;
+        }
+
+        .section-title {
+            color: #577c69;
+            font-size: 24px;
+            text-align: center;
+            line-height: 1.8;
+            padding-top: 30px;
+        }
+
+        #SECTION5 {
+            /* height: 1045px; */
+            /* background-color: rgb(245, 245, 245); */
+            padding: 20px 0px;
+
+        }
+
+        #SECTION5 .bg-content {
+            background-color: rgb(245, 245, 245);
+        }
+
+        #SECTION5 .product {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-gap: 10px;
+            max-width: 1260px;
+
+            margin: 0px auto;
+        }
+
+        #SECTION5 .product .product-item {
+            padding: 10px;
+        }
+
+        #SECTION5 .product .product-title {
+            font-family: "Open Sans", sans-serif;
+            color: rgb(0, 0, 0);
+            font-size: 16px;
+            text-align: left;
+            line-height: 1.8;
+        }
+
+        #SECTION5 .product .product-price {
+            font-family: "Open Sans", sans-serif;
+            color: hsla(0, 0%, 15%, 0.83);
+            font-size: 16px;
+            font-weight: bold;
+            text-align: left;
+            line-height: 2.6;
+        }
+
+        #SECTION5 .product .product-discount {
+            font-family: "Open Sans", sans-serif;
+            text-decoration-line: line-through;
+            -webkit-text-decoration-line: line-through;
+            color: rgb(133, 133, 133);
+            font-size: 13px;
+            font-weight: bold;
+            text-align: left;
+            line-height: 1.6;
+        }
+
+        #SECTION5 .product .product-count {
+            font-family: "Open Sans", sans-serif;
+            color: rgba(79, 79, 79, 0.7);
+            font-size: 14px;
+            text-align: left;
+            line-height: 1.6;
+        }
+
+        #SECTION6 {
+            margin-top: 50px;
+            position: relative;
+            background-color: rgb(238, 242, 240);
+        }
+
+        #SECTION6 .bg-section {
+            position: absolute;
+            background: url(./media/images/bg-6.svg) no-repeat top;
+            top: -31px;
+            height: 40px;
+            width: 100%;
+        }
+
+        #SECTION6 .shipper {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            grid-gap: 10px;
+            max-width: 1120px;
+            margin: 0 auto;
+            margin-top: 20px;
+            padding-bottom: 50px;
+        }
+
+
+        #SECTION6 .shipper-item .card {
+            border: none;
+            /* padding-top: 20px; */
+            background: transparent;
+        }
+
+        #SECTION6 .shipper-item .card-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 0px auto;
+            overflow: hidden;
+            background: #eeeeee;
+        }
+
+        #SECTION6 .shipper-item {
+            /* padding-top: 20px; */
+        }
+
+        #SECTION6 .shipper-item .card-title {
+            font-size: 20px;
+            text-align: center;
+            padding: 10px;
+            color: #5c806d;
+        }
+
+        #SECTION6 .shipper-item .card-text {
+            font-size: 14px;
+            line-height: 2.2;
+            text-align: center !important;
+        }
+
+        #SECTION7 {
+            margin: 0px auto;
+            position: relative;
+        }
+
+        #SECTION7 .bg-section {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #fefefe;
+        }
+
+        #SECTION7 .benefit {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            padding-left: 80px;
+
+        }
+
+        #SECTION7 .benefit .title {
+            margin-top: 60px;
+            padding-bottom: 20px;
+            font-size: 24px;
+            text-transform: uppercase;
+            color: #577C6A
+        }
+
+        #SECTION7 .benefit .benefit-item {
+            display: grid;
+            grid-template-columns: 20px 1fr;
+            margin: 10px 0px;
+            color: #4F4F4F;
+
+        }
+
+        .benefit-left {
+            padding-right: 40px;
+            padding-bottom: 40px;
+        }
+
+        .benefit-right {
+            margin-left: 60px;
+        }
+
+        #SECTION7 .benefit .round {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: #577C6A;
+            display: inline-block;
+            vertical-align: middle;
+            justify-self: start;
+            align-self: center;
+        }
+
+        .benefit-text {
+            padding-left: 20px;
+        }
+
+        #SECTION8 {
+            background: #6b8c7ccc;
+        }
+
+        #SECTION8 .order {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            width: 1180px;
+            margin: 0px auto;
+            padding: 20px;
+        }
+
+        #SECTION8 .order .order-left {
+            align-self: center;
+        }
+
+        #SECTION8 .order .order-left .img {
+            background: url('./media/images/order.svg') no-repeat;
+            background: cover;
+            background-size: cover;
+            width: 480px;
+            height: 420px;
+        }
+
+        #SECTION8 .order .order-right h5 {
+            font-weight: bold;
+            font-size: 26px;
+            text-transform: uppercase;
+            line-height: 1.6;
+            padding-left: 80px;
+            padding-top: 30px;
+            color: #fff;
+
+        }
+
+        #form-order {
+            margin-left: 40px;
+            padding: 10px 40px;
+            width: 600px;
+        }
+
+        #form-order .form-control {
+            background: #6B8C7C;
+            border: 1px solid #6b8c7c;
+            color: #d8dedb;
+        }
+
+        #form-order .form-control::-webkit-input-placeholder {
+            color: #d8dedb91;
+        }
+
+        #form-order .form-control:-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            color: #d8dedb91;
+        }
+
+        #form-order .form-control::placeholder {
+            color: #d8dedb91;
+        }
+
+        .submit-order {
+            padding: 0px 25px;
+            height: 50px;
+            font-size: 14px;
+            text-transform: uppercase;
+            /* font-weight: bold;
+            color:  */
+            background: #F7F7F7;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+            border-radius: 8px;
+        }
+
+
+        #SECTION9 {
+            max-width: 800px;
+            margin: 0px auto;
+            position: relative;
+        }
+
+        .thanks {
+            position: relative;
+            padding: 70px;
+        }
+
+        .thanks-icon {
+            width: 130px;
+            height: 100px;
+            margin: 0px auto;
+            background: url('https://w.ladicdn.com/s400x450/57b167c9ca57d39c18a1c57c/icon-gio-hang.png') no-repeat;
+            background-size: contain;
+        }
+
+
+        .thanks h4 {
+            font-family: "Tinos", serif;
+            color: rgb(35, 71, 133);
+            font-size: 100px;
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        .thanks p:nth-of-type(1) {
+            font-family: "Tinos", serif;
+            color: rgb(35, 71, 133);
+            font-size: 24px;
+            text-align: center;
+            letter-spacing: 0px;
+            line-height: 1;
+        }
+
+
+        #img-thanks {
+            width: 540.984px;
+            height: 59px;
+            overflow: hidden;
+            background: url('https://w.ladicdn.com/s850x400/57b167c9ca57d39c18a1c57c/ribbon-554440.png') no-repeat;
+            background-size: cover;
+            margin: 0px auto;
+            position: relative;
+        }
+
+
+        .thanks h5 {
+            position: absolute;
+            top: 10px;
+            left: 0px;
+            width: 100%;
+
+            font-family: "Roboto", sans-serif;
+            color: rgb(35, 71, 133);
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            letter-spacing: 0px;
+            line-height: 1.2;
+
+        }
+
+        .thanks p:nth-of-type(2) {
+            font-family: "Montserrat", sans-serif;
+            color: rgb(87, 87, 87);
+            font-size: 14px;
+            text-align: center;
+            letter-spacing: 0px;
+            line-height: 1.4;
+            top: -5px;
+            position: relative;
+
+        }
+
+        .thanks h6 {
+            font-family: "Lobster", cursive;
+            color: rgb(77, 77, 77);
+            font-size: 18px !important;
+            text-align: center;
+            letter-spacing: 0px;
+            line-height: 1.8;
+            position: relative;
+            padding-top: 20px;
+
+        }
+
+        @media (max-width: 767px) {
+            #SECTION1 {
+                position: relative;
+                height: 247px;
+                background-color: rgb(87, 124, 106);
+            }
+
+            #SECTION2 {
+                position: relative;
+                height: auto;
+
+            }
+
+            .section2-right {
+                padding: 25px !important;
+                padding-top: 0px !important;
+            }
+
+            #SECTION2 h2 {
+                color: rgb(247, 247, 247);
+                font-size: 14px;
+                font-weight: bold;
+                line-height: 1.8;
+            }
+
+            .section2-left {
+                padding: 0px !important;
+            }
+
+            .section2-left #video-intro {
+                width: 100%;
+                margin: 0px auto;
+                height: 240px;
+                padding: 20px;
+                left: 0px;
+                top: 0px;
+
+            }
+
+            #SECTION4 .method-farming {
+                display: grid;
+                grid-template-columns: 1fr;
+                /* grid-template-rows: 1fr 1fr; */
+                grid-gap: 0px;
+                max-width: 1170px;
+                margin: 0px auto;
+            }
+
+            #SECTION3 {
+                height: 200px;
+                background-color: rgba(87, 124, 106, 0.15);
+                background: url(./media/images/bg-2.svg) bottom;
+            }
+
+            #SECTION3 .text-number {
+                font-family: "Open Sans", sans-serif;
+                color: #717070;
+                font-size: 40px;
+                font-weight: bold;
+                text-align: center;
+                line-height: 1;
+            }
+
+            .section-title {
+                color: #577c69;
+                font-size: 28px;
+                text-align: center;
+                line-height: 1.8;
+                padding-top: 8px;
+            }
+
+            #SECTION4 .card {
+                width: 100%;
+                border: none;
+                margin-top: 10px;
+            }
+
+            #SECTION4 .card-img-top {
+                width: 100%;
+                height: 280px;
+            }
+
+            #SECTION5 .product {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-gap: 10px;
+                max-width: 1254px;
+                margin: 0px auto;
+            }
+
+            #SECTION6 .section-title {
+                color: #577c69;
+                font-size: 24px;
+                text-align: center;
+                line-height: 1.8;
+                padding-top: 26px;
+            }
+
+            #SECTION6 .shipper {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-gap: 10px;
+                max-width: 1120px;
+                margin: 0 auto;
+                margin-top: 20px;
+                padding-bottom: 50px;
+            }
+
+            #SECTION6 .shipper-item .card-title {
+                font-size: 24px;
+                text-align: center;
+                padding: 10px;
+                color: #5c806d;
+            }
+
+
+
+            #SECTION6 .shipper-item .card-text {
+                font-size: 18px;
+                line-height: 2.2;
+                text-align: center !important;
+            }
+
+            #SECTION7 .benefit {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr;
+                padding-left: 30px;
+            }
+
+            #SECTION8 .order {
+                display: block;
+                width: 100%;
+                margin: 0px auto;
+                padding: 20px;
+            }
+
+            #SECTION8 .order .order-left .img {
+                background: url(./media/images/order.svg) no-repeat;
+                background: cover;
+                background-size: contain;
+                width: 360px;
+                height: 340px;
+                margin: 0px auto;
+            }
+
+
+            #SECTION8 .order .order-right h5 {
+                font-weight: bold;
+                font-size: 20px;
+                text-transform: uppercase;
+                line-height: 1.6;
+                padding-top: 30px;
+                padding: 5px;
+                text-align: center;
+                color: #fff;
+            }
+
+            #form-order {
+                margin: 0px;
+                padding: 0px;
+                width: 100%;
+            }
+
+            #kilogam {
+                margin-top: 15px;
+            }
+
+            #form-order .form-control {
+                background: #6B8C7C;
+                border: 1px solid #6b8c7c;
+                color: #d8dedb;
+                min-height: 48px;
+            }
+
+            .submit-order {
+                margin: 0px auto;
+                width: 100%;
+            }
+
+
+
+
+
+            .thanks {
+                position: relative;
+                padding: 20px;
+            }
+
+            .thanks-icon {
+                width: 80px;
+                height: 80px;
+                margin: 0px auto;
+                background-size: contain;
+                position: relative;
+            }
+
+            .thanks h4 {
+                font-family: "Tinos", serif;
+                color: rgb(35, 71, 133);
+                font-size: 30px;
+                text-align: center;
+                line-height: 1.6;
+            }
+
+            .thanks p:nth-of-type(1) {
+                font-family: "Tinos", serif;
+                color: rgb(35, 71, 133);
+                font-size: 14px;
+                text-align: center;
+                letter-spacing: 0px;
+                line-height: 1;
+            }
+
+            #img-thanks {
+                width: 280px;
+                height: 60px;
+                overflow: hidden;
+                background: url('https://w.ladicdn.com/s850x400/57b167c9ca57d39c18a1c57c/ribbon-554440.png') no-repeat;
+                background-size: contain;
+                margin: 0px auto;
+            }
+
+            .thanks h5 {
+                width: 100%;
+                position: absolute;
+                top: 4px;
+                left: 0px;
+                font-family: "Roboto", sans-serif;
+                color: rgb(35, 71, 133);
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+                letter-spacing: 0px;
+                line-height: 1.2;
+            }
+
+            .thanks h6 {
+                font-family: "Lobster", cursive;
+                color: rgb(77, 77, 77);
+                font-size: 14px !important;
+                text-align: center;
+                letter-spacing: 0px;
+                line-height: 1.8;
+            }
+
+        }
+    </style>
+</head>
+
+<body class="serif avenir">
+
+    <main>
+
+
+        <section id="SECTION1">
+
+            <div class="section-bg">
+
+            </div>
+            <div class="section-content">
+                <!-- Nội dung -->
+            </div>
+
+        </section>
+
+
+
+
+
+        <section id="SECTION2" class="sans-serif">
+            <div class="section-bg">
+
+            </div>
+            <div class="row">
+                <div class="col-md-6 pt-5 col-xs-12 text-right section2-left">
+
+                    <iframe id="video-intro" src="https://www.youtube.com/embed/wdzwoXQog3I" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+
+                </div>
+                <div class="col-md-5 pt-3 col-xs-12 section2-right text-left">
+
+                    <h1>
+                        Dự án khởi nghiệp
+                    </h1>
+                    <h2>
+                        CÁC EM HỌC SINH TRƯỜNG LỤC NGẠN
+                        TRỒNG RAU - DIỆN TÍCH 2400m2
+                    </h2>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                        type
+                        and scrambled it to make a type specimen book. It has survived not only five centuries, but also
+                        the
+                        leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
+                        1960s
+                        with the release of Letraset sheets containing Lorem Ipsum passages.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="SECTION4" class="athelas">
+            <div class="bg-section">
+            </div>
+
+            <h3 class="section-title text-center">
+                Phương Pháp canh Trồng
+            </h3>
+            <div class="method-farming justify-content-around">
+                <div class="text-center item-method-farming">
+
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://w.ladicdn.com/s750x550/5986678501ffb574811a90d3/unnamed-1-20200212031440.jpg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Chuẩn bị </h5>
+                            <p class="card-text">
+                                Chuẩn bị tốt kế hoạch giúp quá trình trồng cây được thuận lợi
+                                <br />
+                                Đúng chất lượng và tiêu chuẩn
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="text-center item-method-farming">
+
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://w.ladicdn.com/5986678501ffb574811a90d3/pp-02-20200212031524.svg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Lựa chọn hạt giống theo mùa vụ </h5>
+                            <p class="card-text">
+                                Lựa chọn loại hạt giống phù hợp oviws mùa phụ giúp cây phát triển tốt ít sâu bệnh.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="text-center item-method-farming">
+
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://w.ladicdn.com/5986678501ffb574811a90d3/pp-09-20200212031828.svg"
+                            alt="Card image cap">
+                        <div class="card-body p-0">
+                            <h5 class="card-title">Ủ hạt giống </h5>
+                            <p class="card-text">
+                                Bước 1: Cho hạt vào khăn sạch. Bước 2: Gói kín. Bước 3: Ngâm ủ hạt giống ... Tuỳ chủng
+                                loại
+                                rau trồng có thể trồng bằng cây non hoặc hạt giống.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="text-center item-method-farming">
+
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://w.ladicdn.com/5986678501ffb574811a90d3/lam-dat-20200212033207.svg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Các anh bộ đội giúp làm đất </h5>
+                            <p class="card-text">
+                                Cùng các em sự giúp đỡ của các anh bộ đội giúp dự án được suôn sẻ hơn. 
+                                Các khâu làm xới đất, đắp luống, làm đường chia luống. Diện tích đất canh tác đã được
+                                sắp
+                                xếp phân chia phù hợp. 
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="text-center item-method-farming">
+
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://w.ladicdn.com/5986678501ffb574811a90d3/gieo-hat-20200212033352.svg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Gieo Hạt </h5>
+                            <p class="card-text">
+                                Hầu hết các bạn lần đầu gieo hạt giống thì tỉ lệ lên mầm rất thấp hoặc không lên mầm. Có
+                                thể
+                                do các bạn gieo không đúng kỹ thuật.
+                                <br />
+                                Mỗi loại giống có kĩ thuật gieo trồng khác nhau cần tìm hiểu về đặc tính chủng loại rau
+                                để
+                                có kĩ thuật phù hợp.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="text-center item-method-farming">
+
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://w.ladicdn.com/5986678501ffb574811a90d3/cham-soc-20200212033507.svg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Bảo vệ và chăm sóc rau </h5>
+                            <p class="card-text">
+
+                                Tưới nước mỗi ngày đủ độ ẩm để giúp cây phát triển. Kiểm tra cây mỗi ngày để đảm bảo cây
+                                không có sâu bệnh và chu kì thuốc bảo vệ thực vật nếu có sâu bệnh trên cây.
+
+                                <br />
+
+                                Đảm bảo an toàn liều lượng phù hợp do thầy cô đảm nhận.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+        <section id="SECTION3" class="athelas">
+            <div class="bg-section">
+            </div>
+            <div class="d-flex py-5  justify-content-around">
+                <div class="text-center">
+
+                    <p class="text-number">500+</p>
+                    <p class="text">
+                        Học sinh tham gia
+
+                    </p>
+
+                </div>
+                <div class="text-center">
+                    <p class="text-number">100+</p>
+                    <p class="text">
+                        Tình nguyện viên
+                    </p>
+
+                </div>
+                <div class="text-center">
+                    <p class="text-number">5</p>
+                    <p class="text">
+                        Nhà tài trợ
+                    </p>
+                </div>
+            </div>
+
+        </section>
+        <section id="SECTION5" class="athelas">
+            <div class="bg-content">
+
+            </div>
+            <h3 class="section-title text-center">
+                Sản phẩm cung cấp
+            </h3>
+            <div class="product">
+                <div class="product-item">
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://w.ladicdn.com/5986678501ffb574811a90d3/ca-chua-20200212035419.svg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title product-title">Cà chua sạch </h5>
+                            <div class="d-flex justify-content-between">
+                                <span class="product-price">500.000đ</span>
+                                <span class="product-count">Bán theo kilogam</span>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <span class="product-discount">600.000đ</span>
+                                <span class="product-rate">
+                                    <img src="https://w.ladicdn.com/5986678501ffb574811a90d3/sao-20200212035707.svg" />
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://w.ladicdn.com/5986678501ffb574811a90d3/ca-rot-20200212040210.svg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title product-title">Cà rốt sạch </h5>
+                            <div class="d-flex justify-content-between">
+                                <span class="product-price">500.000đ</span>
+                                <span class="product-count">Bán theo kilogam</span>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <span class="product-discount">600.000đ</span>
+                                <span class="product-rate">
+                                    <img src="https://w.ladicdn.com/5986678501ffb574811a90d3/sao-20200212035707.svg" />
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://w.ladicdn.com/5986678501ffb574811a90d3/cam-sach-20200212040313.svg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title product-title">Cam sạch </h5>
+                            <div class="d-flex justify-content-between">
+                                <span class="product-price">500.000đ</span>
+                                <span class="product-count">Bán theo kilogam</span>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <span class="product-discount">600.000đ</span>
+                                <span class="product-rate">
+                                    <img src="https://w.ladicdn.com/5986678501ffb574811a90d3/sao-20200212035707.svg" />
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="product-item">
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://w.ladicdn.com/5986678501ffb574811a90d3/bap-cai-20200212040451.svg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title product-title">Bắp cải sạch </h5>
+                            <div class="d-flex justify-content-between">
+                                <span class="product-price">500.000đ</span>
+                                <span class="product-count">Bán theo kilogam</span>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <span class="product-discount">600.000đ</span>
+                                <span class="product-rate">
+                                    <img src="https://w.ladicdn.com/5986678501ffb574811a90d3/sao-20200212035707.svg" />
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="product-item">
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://w.ladicdn.com/5986678501ffb574811a90d3/ca-chua-20200212035419.svg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title product-title">Cà chua sạch </h5>
+                            <div class="d-flex justify-content-between">
+                                <span class="product-price">500.000đ</span>
+                                <span class="product-count">Bán theo kilogam</span>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <span class="product-discount">600.000đ</span>
+                                <span class="product-rate">
+                                    <img src="https://w.ladicdn.com/5986678501ffb574811a90d3/sao-20200212035707.svg" />
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://w.ladicdn.com/5986678501ffb574811a90d3/ca-rot-20200212040210.svg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title product-title">Cà rốt sạch </h5>
+                            <div class="d-flex justify-content-between">
+                                <span class="product-price">500.000đ</span>
+                                <span class="product-count">Bán theo kilogam</span>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <span class="product-discount">600.000đ</span>
+                                <span class="product-rate">
+                                    <img src="https://w.ladicdn.com/5986678501ffb574811a90d3/sao-20200212035707.svg" />
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://w.ladicdn.com/5986678501ffb574811a90d3/cam-sach-20200212040313.svg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title product-title">Cam sạch </h5>
+                            <div class="d-flex justify-content-between">
+                                <span class="product-price">500.000đ</span>
+                                <span class="product-count">Bán theo kilogam</span>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <span class="product-discount">600.000đ</span>
+                                <span class="product-rate">
+                                    <img src="https://w.ladicdn.com/5986678501ffb574811a90d3/sao-20200212035707.svg" />
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="product-item">
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://w.ladicdn.com/5986678501ffb574811a90d3/bap-cai-20200212040451.svg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title product-title">Bắp cải sạch </h5>
+                            <div class="d-flex justify-content-between">
+                                <span class="product-price">500.000đ</span>
+                                <span class="product-count">Bán theo kilogam</span>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <span class="product-discount">600.000đ</span>
+                                <span class="product-rate">
+                                    <img src="https://w.ladicdn.com/5986678501ffb574811a90d3/sao-20200212035707.svg" />
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+
+        <section id="SECTION6" class="athelas">
+            <div class="bg-section">
+
+            </div>
+
+            <h3 class="section-title text-center">
+                Qui Trình Giao Nhận Hàng
+            </h3>
+
+            <!-- <p class="text-center">Hãy liên hệ với chuyên viên tư vấn của Ladipage để giải đáp ngay các khúc mắc của
+                bạn!</p> -->
+
+            <div class="shipper">
+                <div class="shipper-item">
+                    <div class="card">
+                        <div class="card-img">
+                            <div class="card-img-top" style="width: 100%; height: 100%; background: url('./media/images/sh-01.svg') no-repeat center;
+                            background-size: cover;">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Gửi yêu cầu</h5>
+                            <p class="card-text">
+                                Quý khách đặt hàng trên trang website qua biểu mẫu hoặc gọi điện thoại trực tiếp đến số
+                                hotline: (028) 6688 4488 – (028) 6688 9944.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="shipper-item">
+                    <div class="card">
+                        <div class="card-img">
+                            <div class="card-img-top" style="width: 100%; height: 100%; background: url('./media/images/sh-02.svg') no-repeat center;
+                                background-size: cover;">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Nhận hàng tận nơi</h5>
+                            <p class="card-text">
+                                Khi quý khách đã xác nhận thành công, nhân viên điều phối sẽ cử nhân viên giao hàng trực
+                                tiếp đến nhận hàng của quý khách.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="shipper-item">
+                    <div class="card">
+                        <div class="card-img">
+                            <div class="card-img-top" style="width: 100%; height: 100%; background: url('./media/images/sh-03.svg') no-repeat center;
+                            background-size: cover;">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Giao hàng cho khách hàng</h5>
+                            <p class="card-text">
+                                Việc giao hàng đến địa chỉ quý khách yêu cầu được tiến hành nhanh hay chậm là tùy thuộc
+                                vào gói dịch vụ mà quý khách đã đăng ký trên trang website dự án.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="SECTION7" class="athelas">
+
+            <div class="benefit ">
+                <div class="benefit-left">
+                    <h4 class="title">Lí do chọn sản phẩm của chúng tôi</h4>
+                    <ul class="list-group">
+                        <li class="benefit-item">
+                            <span class="round"></span>
+                            <div class="benefit-text">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has
+                                    been the industry's standard dummy text ever since the 1500s</p>
+                            </div>
+                        </li>
+
+
+
+                        <li class="benefit-item">
+                            <span class="round"></span>
+                            <div class="benefit-text">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has
+                                    been the industry's standard dummy text ever since the 1500s</p>
+                            </div>
+                        </li>
+
+                        <li class="benefit-item">
+                            <span class="round"></span>
+                            <div class="benefit-text">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has
+                                    been the industry's standard dummy text ever since the 1500s</p>
+                            </div>
+                        </li>
+
+
+                        <li class="benefit-item">
+                            <span class="round"></span>
+                            <div class="benefit-text">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has
+                                    been the industry's standard dummy text ever since the 1500s</p>
+                            </div>
+                        </li>
+
+                        <li class="benefit-item">
+                            <span class="round"></span>
+                            <div class="benefit-text">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has
+                                    been the industry's standard dummy text ever since the 1500s</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="benefit-right"
+                    style="background: url('./media/images/section7.svg') no-repeat; background-size: cover; width: 100%; height: 100%;">
+                    <div></div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section id="SECTION8" class="athelas">
+            <div class="bg-section"></div>
+            <div class="order">
+                <div class="order-left">
+                    <div class="img">
+
+                    </div>
+                </div>
+                <div class="order-right">
+                    <h5>Giao hàng thực phẩm <br /> đến tận nhà của bạn</h5>
+                    <form name="myForm" id="form-order" onsubmit="return validateMyForm();">
+                        <div class="form-group">
+                            <select id="select-product" name="product" class="form-control" placeholder="Chọn sản phẩm">
+                                <option selected disabled hidden>Chọn sản phẩm</option>
+                                <option value="ca_chua">Cà Chua Sạch</option>
+                                <option value="ca_rot">Cà Rốt Sạch</option>
+                                <option value="cam">Cam Sạch</option>
+                                <option value="cai_bap">Cải Bắp Sạch</option>
+                            </select>
+                        </div>
+                        <div class="form-group  row">
+                            <div class="col-md-6">
+                                <select id="order-time" name="time" class="form-control">
+                                    <option selected disabled hidden>Gói sử dụng</option>
+                                    <option value="1">1 tháng</option>
+                                    <option value="3">3 tháng</option>
+                                    <option value="6">6 tháng</option>
+                                    <option value="12">12 tháng</option>
+                                </select>
+
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" name="kilogram" class="form-control" id="kilogam"
+                                    placeholder="Số kilogam" value="" />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" name="full_name" class="form-control" placeholder="Họ và tên" />
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" name="email" class="form-control" placeholder="Email liên hệ" />
+                        </div>
+
+                        <div class="form-group">
+                            <input type="tel" name="phone" class="form-control" placeholder="Số điện thoại liên hệ" />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="address" class="form-control" placeholder="Địa chỉ liên hệ" />
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" name="message"
+                                placeholder="Gửi thêm thông tin của bạn ở đây..." rows="5"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-sm submit-order">Tạo đơn hàng</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="SECTION9">
+
+            <div class="thanks">
+                <div class="thanks-icon"></div>
+                <h4>Cảm Ơn !</h4>
+                <p>Đã đồng hành cùng dự án khởi nghiệp học sinh</p>
+
+                <div id="img-thanks">
+                    <h5 class="ladi-headline">Một dự án thiện nguyện phi lợi nhuận!</h5>
+                </div>
+
+
+                <!-- <p class="ladi-headline">Xây dựng đạo đức niềm tin và lòng biết ơn !</p> -->
+                <h6 class="ladi-headline">Một tình yêu một tương lai - Hãy cho đi thứ bạn có rồi bạn sẽ nhận lại điều
+                    xứng
+                    đáng.</h6>
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <script type="text/javascript">
+        $("#form-order").submit(function (event) {
+            alert("Handler for .submit() called.");
+            event.preventDefault();
+            event.stopPropagation();
+            var data = $('#form-order').serialize();
+
+            alert('Đã thêm dữ liệu vào Form');
+            console.log(data);
+            $.ajax({
+                type: 'GET',
+                url: 'https://script.google.com/macros/s/AKfycbx0k-ZB8m6XWTFRf4puVtnDexJERH_cZmjAwM9qOQKuOQF7CoA/exec',
+                dataType: 'json',
+                crossDomain: true,
+                data: data,
+                success: function (data) {
+                    if (data == 'false') {
+                        alert('Thêm không thành công, bạn cũng có thể sử dụng để hiển thị Popup hoặc điều hướng');
+                    } else {
+                        alert('Đã thêm dữ liệu vào Form');
+                    }
+                }
+            });
+            return false;
+        });
+
+    </script>
+
+</body>
+
+</html>
